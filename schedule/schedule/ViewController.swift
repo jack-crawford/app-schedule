@@ -8,17 +8,13 @@
 
 import UIKit
 class ViewController: UIViewController {
-    
     @IBOutlet weak var today_label: UILabel!
+    var timer = NSTimer()
     @IBOutlet weak var at_label: UILabel!
     @IBOutlet weak var letter_display: UILabel!
     @IBOutlet weak var next_mod_time_label: UILabel!
     @IBOutlet weak var mod_display: UILabel!
     @IBOutlet weak var message_label: UILabel!
-    @IBOutlet weak var nav_bar: UINavigationBar!
-    
-    var timer = NSTimer()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
