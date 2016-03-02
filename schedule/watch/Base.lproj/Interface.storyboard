@@ -24,9 +24,9 @@
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="letter_day_label" destination="6jw-EF-Cg6" id="z98-fu-6iG"/>
-                        <outlet property="mod_time_label" destination="VYv-df-zgW" id="eD4-J0-j0Y"/>
-                        <outlet property="next_mod_label" destination="IPn-Dg-DmZ" id="aC6-Nt-Xfw"/>
+                        <outlet property="letter_day_label" destination="6jw-EF-Cg6" id="HPK-As-ljA"/>
+                        <outlet property="mod_time_label" destination="VYv-df-zgW" id="chw-Hm-WcR"/>
+                        <outlet property="next_mod_label" destination="IPn-Dg-DmZ" id="2UO-sE-You"/>
                     </connections>
                 </controller>
             </objects>

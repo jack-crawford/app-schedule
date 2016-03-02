@@ -16,11 +16,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var mod_display: UILabel!
     @IBOutlet weak var message_label: UILabel!
     
+    @IBAction func header_button(sender: AnyObject) {
+        if today_label.textColor == UIColor.blackColor() {
+            today_label.textColor = UIColor.redColor();
+            at_label.textColor = UIColor.whiteColor();
+            letter_display.textColor = UIColor.redColor();
+            next_mod_time_label.textColor = UIColor.whiteColor();
+            mod_display.textColor = UIColor.cyanColor();
+            message_label.textColor = UIColor.redColor();
+            self.view.backgroundColor = UIColor.blackColor()
+        } else {
+            today_label.textColor = UIColor.blackColor();
+            at_label.textColor = UIColor.blackColor();
+            letter_display.textColor = UIColor.blackColor();
+            next_mod_time_label.textColor = UIColor.blackColor();
+            mod_display.textColor = UIColor.blackColor();
+            message_label.textColor = UIColor.blackColor();
+            self.view.backgroundColor = UIColor.whiteColor()
+        }
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("hello world")
-        //loadweb()
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
     
