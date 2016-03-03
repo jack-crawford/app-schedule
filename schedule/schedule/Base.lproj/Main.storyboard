@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -39,13 +38,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="begins at" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-gN-130">
                                 <rect key="frame" x="0.0" y="335" width="320" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="Pa8-BN-Ft2"/>
+                                    <constraint firstAttribute="height" constant="73" id="5qU-tb-qpc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj9-dI-jsj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj9-dI-jsj">
                                 <rect key="frame" x="0.0" y="488" width="320" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,32 +93,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sB6-TN-6Aa" firstAttribute="top" secondItem="dlG-gN-130" secondAttribute="bottom" constant="8" symbolic="YES" id="0zm-dH-C65"/>
                             <constraint firstItem="iA5-QQ-7NX" firstAttribute="top" secondItem="nYl-UF-YJk" secondAttribute="bottom" id="1Ut-la-TCD"/>
-                            <constraint firstItem="dlG-gN-130" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3B3-vo-8UA"/>
                             <constraint firstItem="p6u-vU-0F6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4c4-zY-elx"/>
                             <constraint firstItem="p6u-vU-0F6" firstAttribute="top" secondItem="RsR-Ky-fpJ" secondAttribute="bottom" constant="8" symbolic="YES" id="4ql-jf-YkM"/>
                             <constraint firstItem="x1W-gD-QMO" firstAttribute="leading" secondItem="p6u-vU-0F6" secondAttribute="leading" id="5pV-aJ-aKi"/>
-                            <constraint firstItem="dlG-gN-130" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="666-4u-6YO"/>
                             <constraint firstItem="gj9-dI-jsj" firstAttribute="bottom" secondItem="ZVe-eZ-qFg" secondAttribute="top" id="7JW-UX-UQ2"/>
                             <constraint firstItem="x1W-gD-QMO" firstAttribute="top" secondItem="p6u-vU-0F6" secondAttribute="bottom" constant="4" id="81P-OZ-Uts"/>
+                            <constraint firstItem="dlG-gN-130" firstAttribute="top" secondItem="x1W-gD-QMO" secondAttribute="bottom" constant="14" id="9jO-Pv-yIe"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="leading" secondItem="iA5-QQ-7NX" secondAttribute="leading" id="AB4-ul-NCL"/>
                             <constraint firstItem="iA5-QQ-7NX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="AIJ-Po-lQD"/>
                             <constraint firstItem="sB6-TN-6Aa" firstAttribute="leading" secondItem="x1W-gD-QMO" secondAttribute="leading" id="Bch-OM-HbX"/>
                             <constraint firstItem="x1W-gD-QMO" firstAttribute="trailing" secondItem="p6u-vU-0F6" secondAttribute="trailing" id="DRR-aD-4GW"/>
                             <constraint firstItem="gj9-dI-jsj" firstAttribute="trailing" secondItem="sB6-TN-6Aa" secondAttribute="trailing" id="H4B-8J-1hW"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HfP-Xq-xKj"/>
-                            <constraint firstItem="sB6-TN-6Aa" firstAttribute="top" secondItem="dlG-gN-130" secondAttribute="bottom" constant="8" symbolic="YES" id="Hh1-LJ-pjo"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="leading" secondItem="p6u-vU-0F6" secondAttribute="leading" id="U4O-Lw-t6T"/>
                             <constraint firstItem="sB6-TN-6Aa" firstAttribute="trailing" secondItem="x1W-gD-QMO" secondAttribute="trailing" id="UdQ-kp-4pz"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="trailing" secondItem="iA5-QQ-7NX" secondAttribute="trailing" id="YLZ-Yr-HD8"/>
-                            <constraint firstItem="dlG-gN-130" firstAttribute="top" secondItem="x1W-gD-QMO" secondAttribute="bottom" constant="14" id="as9-bl-ivS"/>
+                            <constraint firstItem="dlG-gN-130" firstAttribute="leading" secondItem="x1W-gD-QMO" secondAttribute="leading" id="e10-aH-vzg"/>
                             <constraint firstItem="gj9-dI-jsj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ewE-Rd-1Rb"/>
-                            <constraint firstItem="gj9-dI-jsj" firstAttribute="top" secondItem="dlG-gN-130" secondAttribute="bottom" constant="80" id="f26-wn-bas"/>
+                            <constraint firstItem="dlG-gN-130" firstAttribute="trailing" secondItem="x1W-gD-QMO" secondAttribute="trailing" id="hJ9-oP-jMV"/>
                             <constraint firstItem="x1W-gD-QMO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hVu-SP-viB"/>
                             <constraint firstItem="x1W-gD-QMO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="km0-U0-37h"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="trailing" secondItem="p6u-vU-0F6" secondAttribute="trailing" id="n6D-l2-c81"/>
                             <constraint firstItem="sB6-TN-6Aa" firstAttribute="leading" secondItem="gj9-dI-jsj" secondAttribute="leading" id="pS5-Ds-ihB"/>
-                            <constraint firstItem="x1W-gD-QMO" firstAttribute="centerX" secondItem="dlG-gN-130" secondAttribute="centerX" id="rws-IG-q7d"/>
                             <constraint firstItem="ZVe-eZ-qFg" firstAttribute="top" secondItem="sB6-TN-6Aa" secondAttribute="bottom" constant="66" id="uTo-RI-LZp"/>
                             <constraint firstAttribute="trailing" secondItem="RsR-Ky-fpJ" secondAttribute="trailing" id="vQC-7D-MLc"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="top" secondItem="iA5-QQ-7NX" secondAttribute="bottom" constant="7" id="yua-rC-BDn"/>
@@ -130,7 +127,6 @@
                         <outlet property="letter_display" destination="p6u-vU-0F6" id="Tcy-nd-cSe"/>
                         <outlet property="message_label" destination="gj9-dI-jsj" id="B0H-QL-f60"/>
                         <outlet property="mod_display" destination="x1W-gD-QMO" id="3I1-t2-UkI"/>
-                        <outlet property="navbar" destination="iA5-QQ-7NX" id="BlM-mV-wqD"/>
                         <outlet property="next_mod_time_label" destination="sB6-TN-6Aa" id="Kto-Ys-NZN"/>
                         <outlet property="today_label" destination="RsR-Ky-fpJ" id="dIU-Ed-gkT"/>
                     </connections>
