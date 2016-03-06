@@ -38,8 +38,8 @@ class InterfaceController: WKInterfaceController {
                             let mod = dict["mod"] as? String
                             let mod_time = dict["modstart"] as? String
                             if mod == "19" {
-                                letter_day_label.setText("School's")
-                                next_mod_label.setText("out at")
+                                letter_day_label.setText("Day")
+                                next_mod_label.setText("ends at")
                                 mod_time_label.setText("3:10!")
                             } else {
                                 if mod == "over"{

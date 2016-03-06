@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -110,6 +111,7 @@
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="leading" secondItem="p6u-vU-0F6" secondAttribute="leading" id="U4O-Lw-t6T"/>
                             <constraint firstItem="sB6-TN-6Aa" firstAttribute="trailing" secondItem="x1W-gD-QMO" secondAttribute="trailing" id="UdQ-kp-4pz"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="trailing" secondItem="iA5-QQ-7NX" secondAttribute="trailing" id="YLZ-Yr-HD8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dlG-gN-130" secondAttribute="trailing" constant="-20" id="ZAj-1f-sk6"/>
                             <constraint firstItem="dlG-gN-130" firstAttribute="leading" secondItem="x1W-gD-QMO" secondAttribute="leading" id="e10-aH-vzg"/>
                             <constraint firstItem="gj9-dI-jsj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ewE-Rd-1Rb"/>
                             <constraint firstItem="dlG-gN-130" firstAttribute="trailing" secondItem="x1W-gD-QMO" secondAttribute="trailing" id="hJ9-oP-jMV"/>
@@ -119,6 +121,7 @@
                             <constraint firstItem="sB6-TN-6Aa" firstAttribute="leading" secondItem="gj9-dI-jsj" secondAttribute="leading" id="pS5-Ds-ihB"/>
                             <constraint firstItem="ZVe-eZ-qFg" firstAttribute="top" secondItem="sB6-TN-6Aa" secondAttribute="bottom" constant="66" id="uTo-RI-LZp"/>
                             <constraint firstAttribute="trailing" secondItem="RsR-Ky-fpJ" secondAttribute="trailing" id="vQC-7D-MLc"/>
+                            <constraint firstItem="dlG-gN-130" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="woP-AA-jd1"/>
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="top" secondItem="iA5-QQ-7NX" secondAttribute="bottom" constant="7" id="yua-rC-BDn"/>
                         </constraints>
                     </view>

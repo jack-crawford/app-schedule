@@ -61,31 +61,35 @@ class ViewController: UIViewController {
                             let mod = dict["mod"] as! String
                             let message = dict["messsage"] as? String
                             let mod_time = dict["modstart"] as? String
-                            if mod == "over" {
-                                letter_display.text = "school";
-                                mod_display.text = "is out"
-                                next_mod_time_label.text = ""
-                                at_label.text = ""
-                                //day
-                            } else {
-                                if mod == "19"{
-                                    mod_display.text = "school ends"
-                                    next_mod_time_label.text = "3:10"
-                                    at_label.text = "at"
-                                    letter_display.text = cyc + " Day";
-                                    message_label.text = message;
-
-                                }
-                                else {
-                                    letter_display.text = cyc + " Day";
-                                    message_label.text = message;
-                                    mod_display.text = "Mod " + mod;
-                                    next_mod_time_label.text = mod_time;
+                            let date = NSDateComponents()
+                            if date.weekday == 1 || date.weekday == 7 {
+                                
+                                } else {
+                                    if mod == "over" {
+                                        letter_display.text = "school";
+                                        mod_display.text = "is out"
+                                        next_mod_time_label.text = ""
+                                        at_label.text = ""
+                                    } else {
+                                        if mod == "19"{
+                                            mod_display.text = "school ends"
+                                            next_mod_time_label.text = "3:10"
+                                            at_label.text = "at"
+                                            letter_display.text = cyc + " Day";
+                                            message_label.text = message;
+                                    } else {
+                                        letter_display.text = cyc + " Day";
+                                        message_label.text = message;
+                                        mod_display.text = "Mod " + mod;
+                                        next_mod_time_label.text = mod_time;
+                                    } else {
+                                        let hour = date.hour
+                                        if hour <= 8 {
+                                        
+                                        }
+                                    }
                                 }
                             }
-                            
-                            
-                            
                         } else {
                             print("not a dictionary")
                         }
