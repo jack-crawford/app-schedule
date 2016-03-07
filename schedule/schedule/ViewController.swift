@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             message_label.textColor = UIColor.blackColor();
             self.view.backgroundColor = UIColor.whiteColor()
         }
+        print("button")
 
     }
     
@@ -47,13 +48,22 @@ class ViewController: UIViewController {
     }
     
     func loadweb(){
+        print("loadweb started")
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/mobile.php") {
             do {
                 let contents = try! NSString(contentsOfURL: url, usedEncoding: nil)
                 let data = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
                 do {
-                    
-                    var error:NSError? = nil
+                    let todaysDate:NSDate = NSDate()
+                    let dateFormatter:NSDateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "EEE"
+                    let hourFormatter:NSDateFormatter = NSDateFormatter()
+                    hourFormatter.dateFormat = "HH"
+                    let DateInDayFormat:String = dateFormatter.stringFromDate(todaysDate)
+                    let DateInHourFormat:String = hourFormatter.stringFromDate(todaysDate)
+                    let error:NSError? = nil
+                    print(DateInDayFormat)
+                    print(DateInHourFormat)
                     if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) {
                         if let dict = jsonObject as? NSDictionary {
                             print(dict)
@@ -61,15 +71,29 @@ class ViewController: UIViewController {
                             let mod = dict["mod"] as! String
                             let message = dict["messsage"] as? String
                             let mod_time = dict["modstart"] as? String
-                            let date = NSDateComponents()
-                            if date.weekday == 1 || date.weekday == 7 {
+                            print(DateInDayFormat)
+                            if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
+                                //display weekend labels
+                                letter_display.text = "it's";
+                                mod_display.text = "the weekend"
+                                next_mod_time_label.text = ""
+                                at_label.text = ""
+                                message_label.text = ""
+                                today_label.text = ""
+                            } else {
+                                if DateInHourFormat <= "8" {
+                                    letter_display.text = "Good";
+                                    mod_display.text = "Morning!"
+                                    next_mod_time_label.text = ""
+                                    at_label.text = ""
                                 
                                 } else {
                                     if mod == "over" {
-                                        letter_display.text = "school";
-                                        mod_display.text = "is out"
-                                        next_mod_time_label.text = ""
-                                        at_label.text = ""
+                                    letter_display.text = "school";
+                                    mod_display.text = "is out"
+                                    next_mod_time_label.text = ""
+                                    at_label.text = ""
+                                        //day
                                     } else {
                                         if mod == "19"{
                                             mod_display.text = "school ends"
@@ -77,21 +101,15 @@ class ViewController: UIViewController {
                                             at_label.text = "at"
                                             letter_display.text = cyc + " Day";
                                             message_label.text = message;
-                                    } else {
-                                        letter_display.text = cyc + " Day";
-                                        message_label.text = message;
-                                        mod_display.text = "Mod " + mod;
-                                        next_mod_time_label.text = mod_time;
-                                    } else {
-                                        let hour = date.hour
-                                        if hour <= 8 {
-                                        
-                                        }
+                                        } else {
+                                            letter_display.text = cyc + " Day";
+                                            message_label.text = message;
+                                            mod_display.text = "Mod " + mod;
+                                            next_mod_time_label.text = mod_time;
+                                            } 
                                     }
                                 }
                             }
-                        } else {
-                            print("not a dictionary")
                         }
                     } else {
                         print("Could not parse JSON: \(error!)")
@@ -99,10 +117,14 @@ class ViewController: UIViewController {
                 } catch let error as NSError {
                     print("Failed to load: \(error.localizedDescription)")
                 }
+            
             }
         }
-
     }
+    
+
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
