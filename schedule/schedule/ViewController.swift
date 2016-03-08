@@ -81,11 +81,12 @@ class ViewController: UIViewController {
                                 message_label.text = ""
                                 today_label.text = ""
                             } else {
-                                if DateInHourFormat <= "8" {
+                                if mod == "good morning" {
                                     letter_display.text = "Good";
                                     mod_display.text = "Morning!"
                                     next_mod_time_label.text = ""
                                     at_label.text = ""
+                                    today_label.text = ""
                                 
                                 } else {
                                     if mod == "over" {
@@ -106,6 +107,8 @@ class ViewController: UIViewController {
                                             message_label.text = message;
                                             mod_display.text = "Mod " + mod;
                                             next_mod_time_label.text = mod_time;
+                                            today_label.text = "Today Is"
+                                            at_label.text = "begins at"
                                             } 
                                     }
                                 }

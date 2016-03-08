@@ -29,7 +29,11 @@ class InterfaceController: WKInterfaceController {
                 let contents = try! NSString(contentsOfURL: url, usedEncoding: nil)
                 let data = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
                 do {
-                    
+                    let todaysDate:NSDate = NSDate()
+                    let dateFormatter:NSDateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "EEE"
+                    let DateInDayFormat:String = dateFormatter.stringFromDate(todaysDate)
+
                     var error:NSError? = nil
                     if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) {
                         if let dict = jsonObject as? NSDictionary {
@@ -42,14 +46,25 @@ class InterfaceController: WKInterfaceController {
                                 next_mod_label.setText("ends at")
                                 mod_time_label.setText("3:10!")
                             } else {
-                                if mod == "over"{
-                                    next_mod_label.setText("is")
-                                    letter_day_label.setText("Day")
-                                    mod_time_label.setText("Over!")
+                                if mod == "good morning" {
+                                    next_mod_label.setText("Morning")
+                                    letter_day_label.setText("Good")
+                                    mod_time_label.setText("Dutch")
+
                                 } else {
-                                letter_day_label.setText(cyc);
-                                next_mod_label.setText(mod);
-                                mod_time_label.setText(mod_time);
+                                    if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
+                                        //happy weekend message
+                                    } else {
+                                        if mod == "over"{
+                                            next_mod_label.setText("is")
+                                            letter_day_label.setText("Day")
+                                            mod_time_label.setText("Over!")
+                                        } else {
+                                        letter_day_label.setText(cyc);
+                                        next_mod_label.setText(mod);
+                                        mod_time_label.setText(mod_time);
+                                        }
+                                    }
                                 }
                             }
                         }else {
