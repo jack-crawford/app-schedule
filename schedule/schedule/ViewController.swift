@@ -46,7 +46,20 @@ class ViewController: UIViewController {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
-    
+    func loadmessage(string: String) -> String {
+        if let url = NSURL(string: "http://localhost:8888/Schedule-Project/message.php") {
+            do {
+                let contents = try NSString(contentsOfURL: url, usedEncoding: nil)
+                return contents as String
+            } catch {
+                // contents could not be loaded
+                return ""
+            }
+        } else {
+            // the URL was bad!
+            return ""
+        }
+    }
     func loadweb(){
         print("loadweb started")
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/mobile.php") {
@@ -69,9 +82,9 @@ class ViewController: UIViewController {
                             print(dict)
                             let cyc = dict["cycleval"] as! String
                             let mod = dict["mod"] as! String
-                            let message = dict["messsage"] as? String
-                            let mod_time = dict["modstart"] as? String
+                            let mod_time = dict["modstart"] as! String
                             print(DateInDayFormat)
+                            let message = loadmessage("test")
                             if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
                                 //display weekend labels
                                 letter_display.text = "it's";
@@ -94,6 +107,8 @@ class ViewController: UIViewController {
                                     mod_display.text = "is out"
                                     next_mod_time_label.text = ""
                                     at_label.text = ""
+                                    today_label.text = ""
+                                    message_label.text = message
                                         //day
                                     } else {
                                         if mod == "19"{
@@ -102,6 +117,7 @@ class ViewController: UIViewController {
                                             at_label.text = "at"
                                             letter_display.text = cyc + " Day";
                                             message_label.text = message;
+                                            today_label.text = ""
                                         } else {
                                             letter_display.text = cyc + " Day";
                                             message_label.text = message;
@@ -109,7 +125,7 @@ class ViewController: UIViewController {
                                             next_mod_time_label.text = mod_time;
                                             today_label.text = "Today Is"
                                             at_label.text = "begins at"
-                                            } 
+                                        }
                                     }
                                 }
                             }
