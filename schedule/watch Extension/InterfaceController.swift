@@ -57,12 +57,18 @@ class InterfaceController: WKInterfaceController {
                                     } else {
                                         if mod == "over"{
                                             next_mod_label.setText("is")
-                                            letter_day_label.setText("Day")
-                                            mod_time_label.setText("Over!")
+                                            letter_day_label.setText("School")
+                                            mod_time_label.setText("Out!")
                                         } else {
-                                        letter_day_label.setText(cyc);
-                                        next_mod_label.setText(mod);
-                                        mod_time_label.setText(mod_time);
+                                            if mod == "no school" {
+                                                next_mod_label.setText("School")
+                                                letter_day_label.setText("No")
+                                                mod_time_label.setText("Today!")
+                                            } else {
+                                                letter_day_label.setText(cyc);
+                                                next_mod_label.setText(mod);
+                                                mod_time_label.setText(mod_time);
+                                            }
                                         }
                                     }
                                 }

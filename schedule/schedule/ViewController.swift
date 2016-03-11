@@ -82,9 +82,10 @@ class ViewController: UIViewController {
                             print(dict)
                             let cyc = dict["cycleval"] as! String
                             let mod = dict["mod"] as! String
-                            let mod_time = dict["modstart"] as! String
+                            let mod_time = dict["modstart"] as? String
                             print(DateInDayFormat)
                             let message = loadmessage("test")
+                            
                             if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
                                 //display weekend labels
                                 letter_display.text = "it's";
@@ -100,31 +101,40 @@ class ViewController: UIViewController {
                                     next_mod_time_label.text = ""
                                     at_label.text = ""
                                     today_label.text = ""
-                                
                                 } else {
-                                    if mod == "over" {
-                                    letter_display.text = "school";
-                                    mod_display.text = "is out"
-                                    next_mod_time_label.text = ""
-                                    at_label.text = ""
-                                    today_label.text = ""
-                                    message_label.text = message
-                                        //day
+                                    if mod == "no school" {
+                                        letter_display.text = "School";
+                                        mod_display.text = "is Out"
+                                        next_mod_time_label.text = ""
+                                        at_label.text = ""
+                                        today_label.text = ""
+                                        message_label.text = message
+                                        print("over")
                                     } else {
-                                        if mod == "19"{
-                                            mod_display.text = "school ends"
-                                            next_mod_time_label.text = "3:10"
-                                            at_label.text = "at"
-                                            letter_display.text = cyc + " Day";
-                                            message_label.text = message;
+                                        if mod == "over" {
+                                            letter_display.text = "School";
+                                            mod_display.text = "is Out"
+                                            next_mod_time_label.text = ""
+                                            at_label.text = ""
                                             today_label.text = ""
+                                            message_label.text = message
+                                            print("over")
                                         } else {
-                                            letter_display.text = cyc + " Day";
-                                            message_label.text = message;
-                                            mod_display.text = "Mod " + mod;
-                                            next_mod_time_label.text = mod_time;
-                                            today_label.text = "Today Is"
-                                            at_label.text = "begins at"
+                                            if mod == "19"{
+                                                mod_display.text = "School ends"
+                                                next_mod_time_label.text = "3:10"
+                                                at_label.text = "at"
+                                                letter_display.text = cyc + " Day";
+                                                message_label.text = message;
+                                                today_label.text = ""
+                                            } else {
+                                                letter_display.text = cyc + " Day";
+                                                message_label.text = message;
+                                                mod_display.text = "Mod " + mod;
+                                                next_mod_time_label.text = mod_time;
+                                                today_label.text = "Today Is"
+                                                at_label.text = "begins at"
+                                            }
                                         }
                                     }
                                 }
