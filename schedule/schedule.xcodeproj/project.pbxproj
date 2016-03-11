@@ -14,8 +14,6 @@
 		040902411C6E440C007072C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409023F1C6E440C007072C2 /* LaunchScreen.storyboard */; };
 		0409024C1C6E440C007072C2 /* scheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409024B1C6E440C007072C2 /* scheduleTests.swift */; };
 		040902571C6E440C007072C2 /* scheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040902561C6E440C007072C2 /* scheduleUITests.swift */; };
-		0431DCF31C93321900C6987C /* WatchGlanceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431DCF21C93321900C6987C /* WatchGlanceInterface.swift */; };
-		0431DCF51C93329100C6987C /* WatchGlance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431DCF41C93329100C6987C /* WatchGlance.swift */; };
 		0499C70E1C73C34A00541C97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499C70D1C73C34A00541C97 /* Default-568h@2x.png */; };
 		04DE2D6C1C73FDB500850E25 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE2D6A1C73FDB500850E25 /* Interface.storyboard */; };
 		04DE2D6E1C73FDB500850E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE2D6D1C73FDB500850E25 /* Assets.xcassets */; };
@@ -97,9 +95,6 @@
 		040902521C6E440C007072C2 /* scheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040902561C6E440C007072C2 /* scheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITests.swift; sourceTree = "<group>"; };
 		040902581C6E440C007072C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0431DCF11C93321900C6987C /* watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watch-Bridging-Header.h"; sourceTree = "<group>"; };
-		0431DCF21C93321900C6987C /* WatchGlanceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchGlanceInterface.swift; sourceTree = "<group>"; };
-		0431DCF41C93329100C6987C /* WatchGlance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchGlance.swift; sourceTree = "<group>"; };
 		0499C70D1C73C34A00541C97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		04DE2D681C73FDB500850E25 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE2D6B1C73FDB500850E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -149,7 +144,6 @@
 		0409022A1C6E440C007072C2 = {
 			isa = PBXGroup;
 			children = (
-				0431DCF21C93321900C6987C /* WatchGlanceInterface.swift */,
 				0499C70D1C73C34A00541C97 /* Default-568h@2x.png */,
 				040902351C6E440C007072C2 /* schedule */,
 				0409024A1C6E440C007072C2 /* scheduleTests */,
@@ -157,7 +151,6 @@
 				04DE2D691C73FDB500850E25 /* watch */,
 				04DE2D781C73FDB500850E25 /* watch Extension */,
 				040902341C6E440C007072C2 /* Products */,
-				0431DCF11C93321900C6987C /* watch-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,7 +210,6 @@
 		04DE2D781C73FDB500850E25 /* watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0431DCF41C93329100C6987C /* WatchGlance.swift */,
 				04DE2D7B1C73FDB500850E25 /* InterfaceController.swift */,
 				04DE2D7D1C73FDB500850E25 /* ExtensionDelegate.swift */,
 				04DE2D7F1C73FDB500850E25 /* NotificationController.swift */,
@@ -340,6 +332,7 @@
 				TargetAttributes = {
 					040902321C6E440C007072C2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HPMNKBV2JG;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -356,6 +349,7 @@
 					};
 					04DE2D671C73FDB500850E25 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6G79V3PWFM;
 					};
 					04DE2D731C73FDB500850E25 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -460,10 +454,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DE2D801C73FDB500850E25 /* NotificationController.swift in Sources */,
-				0431DCF51C93329100C6987C /* WatchGlance.swift in Sources */,
 				04DE2D7E1C73FDB500850E25 /* ExtensionDelegate.swift in Sources */,
 				04DE2D7C1C73FDB500850E25 /* InterfaceController.swift in Sources */,
-				0431DCF31C93321900C6987C /* WatchGlanceInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,19 +703,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jack.schedule.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "watch-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -733,18 +721,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jack.schedule.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "watch-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};

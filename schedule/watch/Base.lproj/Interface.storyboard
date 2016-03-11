@@ -32,27 +32,5 @@
             </objects>
             <point key="canvasLocation" x="220" y="324"/>
         </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="Gf2-XD-m9I">
-            <objects>
-                <glanceController topTemplateType="groupLeftSmall" bottomTemplateType="extraLargeLargeBody1Footer" id="Cfg-SK-Ovb" customClass="GlanceInterfaceController" customModule="watch_Extension">
-                    <items>
-                        <group alignment="left" id="o5u-y6-zyi">
-                            <items>
-                                <imageView width="1" height="1" alignment="left" id="pWM-51-0ma"/>
-                            </items>
-                        </group>
-                        <label alignment="left" text="Label" id="9Pb-qD-FB5"/>
-                        <label alignment="left" text="Label" id="F7w-Ny-T6E"/>
-                        <label alignment="left" text="Label" id="nYA-ea-VRa"/>
-                        <label alignment="left" text="?" id="i8e-Jg-X11"/>
-                        <label alignment="left" text="1234" id="g0f-Bg-EJI"/>
-                        <label alignment="left" text="Label" id="2TP-sM-rem"/>
-                        <label alignment="left" text="Footer" id="aIS-B0-Tsw"/>
-                    </items>
-                </glanceController>
-            </objects>
-            <point key="canvasLocation" x="220" y="548"/>
-        </scene>
     </scenes>
 </document>
