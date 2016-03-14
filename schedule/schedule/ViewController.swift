@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     let schoolred = UIColor(red:0.77, green:0.08, blue:0.11, alpha:1.0)
     let schoolblue = UIColor(red:0.54, green:0.73, blue:0.87, alpha:1.0)
     
-    @IBAction func header_button(sender: AnyObject) {
+    
+    
+    @IBAction func menubutton(sender: AnyObject) {
         if today_label.textColor == UIColor.blackColor() {
             today_label.textColor = schoolred;
             at_label.textColor = UIColor.whiteColor();
@@ -44,9 +46,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("hello world")
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
     func loadmessage(string: String) -> String {
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/message.php") {

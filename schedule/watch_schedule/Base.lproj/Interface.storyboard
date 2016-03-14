@@ -10,17 +10,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch_schedule" customModuleProvider="target">
                     <items>
-                        <label width="134.5" height="47.5" alignment="left" text="?" textAlignment="center" id="rqA-xe-RA5">
-                            <color key="textColor" red="0.77644388090000005" green="0.14124618410000001" blue="0.1473502884" alpha="0.85422952590000001" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" type="system" pointSize="32"/>
-                        </label>
-                        <label width="136" height="47.5" alignment="left" text="?" textAlignment="center" id="L9u-Qb-nad">
-                            <color key="textColor" red="0.46274509800000002" green="0.67450980390000004" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" type="system" pointSize="32"/>
-                        </label>
-                        <label width="136" height="46.5" alignment="left" text="?" textAlignment="center" id="CDO-0S-3Sa">
-                            <fontDescription key="font" type="system" pointSize="32"/>
-                        </label>
+                        <group width="1" alignment="center" verticalAlignment="center" contentMode="center" layout="vertical" id="noP-6K-9zO">
+                            <items>
+                                <label width="134.5" height="47.5" alignment="left" text="?" textAlignment="center" id="rqA-xe-RA5">
+                                    <color key="textColor" red="0.77644388090000005" green="0.14124618410000001" blue="0.1473502884" alpha="0.85422952590000001" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label width="136" height="47.5" alignment="left" text="?" textAlignment="center" id="L9u-Qb-nad">
+                                    <color key="textColor" red="0.46274509800000002" green="0.67450980390000004" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label width="136" height="46.5" alignment="left" text="?" textAlignment="center" id="CDO-0S-3Sa">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="letter_day_label" destination="rqA-xe-RA5" id="2Zr-SF-tPe"/>
@@ -36,10 +40,36 @@
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="watch_schedule" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" contentMode="center" id="t8f-Gd-c4y">
+                            <items>
+                                <label width="131.5" height="37.5" alignment="left" text="HH Cycle" id="FeL-8f-WNz">
+                                    <color key="textColor" red="0.77644388090000005" green="0.14124618410000001" blue="0.1473502884" alpha="0.85422952590000001" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="136" height="26.5" alignment="left" text="?" textAlignment="center" id="Vpo-ug-QGs">
+                                    <color key="textColor" red="0.77644388090000005" green="0.14124618410000001" blue="0.1473502884" alpha="0.85422952590000001" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="30"/>
+                                </label>
+                                <label width="136" height="31.5" alignment="left" text="?" textAlignment="center" id="DM1-pb-BoL">
+                                    <color key="textColor" red="0.46274509800000002" green="0.67450980390000004" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="30"/>
+                                </label>
+                                <label width="136" height="39.5" alignment="left" text="?" textAlignment="center" id="fm9-Ln-XYA">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="30"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="letter_day_label" destination="Vpo-ug-QGs" id="JaF-cR-BnB"/>
+                        <outlet property="mod_time_label" destination="fm9-Ln-XYA" id="oax-02-DEh"/>
+                        <outlet property="next_mod_label" destination="DM1-pb-BoL" id="rgv-a8-KoJ"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
