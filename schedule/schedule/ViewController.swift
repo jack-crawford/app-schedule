@@ -9,15 +9,16 @@
 import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var today_label: UILabel!
-    var timer = NSTimer()
     @IBOutlet weak var at_label: UILabel!
     @IBOutlet weak var letter_display: UILabel!
     @IBOutlet weak var next_mod_time_label: UILabel!
-    @IBOutlet weak var mod_display: UILabel!
     @IBOutlet weak var message_label: UILabel!
+    @IBOutlet weak var mod_display: UILabel!
+
     let schoolred = UIColor(red:0.77, green:0.08, blue:0.11, alpha:1.0)
     let schoolblue = UIColor(red:0.54, green:0.73, blue:0.87, alpha:1.0)
-    
+    var timer = NSTimer()
+
     
     
     @IBAction func menubutton(sender: AnyObject) {
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-            timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
+                timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
     func loadmessage(string: String) -> String {
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/message.php") {
