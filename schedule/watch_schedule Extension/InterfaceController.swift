@@ -12,12 +12,12 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-
+    
     @IBOutlet var next_mod_label: WKInterfaceLabel!
     @IBOutlet var letter_day_label: WKInterfaceLabel!
     @IBOutlet var mod_time_label: WKInterfaceLabel!
     var timer = NSTimer()
-
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface object
@@ -33,7 +33,7 @@ class InterfaceController: WKInterfaceController {
                     let dateFormatter:NSDateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "EEE"
                     let DateInDayFormat:String = dateFormatter.stringFromDate(todaysDate)
-
+                    
                     var error:NSError? = nil
                     if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) {
                         if let dict = jsonObject as? NSDictionary {
@@ -50,7 +50,7 @@ class InterfaceController: WKInterfaceController {
                                     next_mod_label.setText("Morning")
                                     letter_day_label.setText("Good")
                                     mod_time_label.setText("Dutch")
-
+                                    
                                 } else {
                                     if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
                                         //happy weekend message
@@ -86,16 +86,16 @@ class InterfaceController: WKInterfaceController {
         }
         
     }
-
-
+    
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
-
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
 }

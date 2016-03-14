@@ -55,7 +55,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="RVC-0b-Y6W"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.77644388090000005" green="0.14124618410000001" blue="0.1473502884" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.71764705882352942" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

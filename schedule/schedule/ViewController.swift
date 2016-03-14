@@ -15,15 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var next_mod_time_label: UILabel!
     @IBOutlet weak var mod_display: UILabel!
     @IBOutlet weak var message_label: UILabel!
+    let schoolred = UIColor(red:0.77, green:0.08, blue:0.11, alpha:1.0)
+    let schoolblue = UIColor(red:0.54, green:0.73, blue:0.87, alpha:1.0)
     
     @IBAction func header_button(sender: AnyObject) {
         if today_label.textColor == UIColor.blackColor() {
-            today_label.textColor = UIColor.redColor();
+            today_label.textColor = schoolred;
             at_label.textColor = UIColor.whiteColor();
-            letter_display.textColor = UIColor.redColor();
+            letter_display.textColor = schoolred;
             next_mod_time_label.textColor = UIColor.whiteColor();
-            mod_display.textColor = UIColor.cyanColor();
-            message_label.textColor = UIColor.redColor();
+            mod_display.textColor = schoolblue;
+            message_label.textColor = schoolred;
             self.view.backgroundColor = UIColor.blackColor()
         } else {
             today_label.textColor = UIColor.blackColor();

@@ -1,8 +1,8 @@
 //
 //  ExtensionDelegate.swift
-//  watch Extension
+//  watch_schedule Extension
 //
-//  Created by Jack Crawford on 2/16/16.
+//  Created by Jack Crawford on 3/14/16.
 //  Copyright © 2016 Jack Crawford. All rights reserved.
 //
 
