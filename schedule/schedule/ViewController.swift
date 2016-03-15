@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             letter_display.textColor = schoolred;
             next_mod_time_label.textColor = UIColor.whiteColor();
             mod_display.textColor = schoolblue;
-            message_label.textColor = schoolred;
+            message_label.textColor = schoolblue;
             self.view.backgroundColor = UIColor.blackColor()
         } else {
             today_label.textColor = UIColor.blackColor();

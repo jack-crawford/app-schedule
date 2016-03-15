@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - watch_schedule copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Glance - watch_schedule.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -14,10 +19,20 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Notification - watch_schedule copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Notification - watch_schedule.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>schedule copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>schedule.xcscheme</key>
 		<dict>
@@ -28,6 +43,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>watch_schedule copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>watch_schedule.xcscheme</key>
 		<dict>
@@ -53,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>046D81E01C971A04008B2F22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>048A4B181C9868C1008CA6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>048A4B2B1C9868CD008CA6B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

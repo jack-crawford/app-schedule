@@ -14,38 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "046D81E01C971A04008B2F22"
-               BuildableName = "watch_schedule.app"
-               BlueprintName = "watch_schedule"
-               ReferencedContainer = "container:schedule.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "040902321C6E440C007072C2"
-               BuildableName = "schedule.app"
-               BlueprintName = "schedule"
-               ReferencedContainer = "container:schedule.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "046D81EC1C971A04008B2F22"
-               BuildableName = "watch_schedule Extension.appex"
-               BlueprintName = "watch_schedule Extension"
-               ReferencedContainer = "container:schedule.xcodeproj">
+               BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+               BuildableName = "watch.app"
+               BlueprintName = "watch"
+               ReferencedContainer = "container:HH Schedule.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -59,7 +31,21 @@
                BlueprintIdentifier = "04DE2D731C73FDB500850E25"
                BuildableName = "watch Extension.appex"
                BlueprintName = "watch Extension"
-               ReferencedContainer = "container:schedule.xcodeproj">
+               ReferencedContainer = "container:HH Schedule.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "040902321C6E440C007072C2"
+               BuildableName = "schedule.app"
+               BlueprintName = "schedule"
+               ReferencedContainer = "container:HH Schedule.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -74,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "046D81E01C971A04008B2F22"
-            BuildableName = "watch_schedule.app"
-            BlueprintName = "watch_schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -99,19 +85,19 @@
          RemotePath = "/schedule">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "046D81E01C971A04008B2F22"
-            BuildableName = "watch_schedule.app"
-            BlueprintName = "watch_schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "046D81E01C971A04008B2F22"
-            BuildableName = "watch_schedule.app"
-            BlueprintName = "watch_schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -129,19 +115,19 @@
          RemotePath = "/schedule">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "046D81E01C971A04008B2F22"
-            BuildableName = "watch_schedule.app"
-            BlueprintName = "watch_schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "046D81E01C971A04008B2F22"
-            BuildableName = "watch_schedule.app"
-            BlueprintName = "watch_schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "04DE2D671C73FDB500850E25"
+            BuildableName = "watch.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

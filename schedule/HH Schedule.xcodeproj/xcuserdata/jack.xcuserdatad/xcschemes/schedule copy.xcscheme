@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "040902321C6E440C007072C2"
-               BuildableName = "schedule.app"
-               BlueprintName = "schedule"
-               ReferencedContainer = "container:schedule.xcodeproj">
+               BlueprintIdentifier = "048A4B181C9868C1008CA6B0"
+               BuildableName = "HH Schedule.app"
+               BlueprintName = "HH Schedule"
+               ReferencedContainer = "container:HH Schedule.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "040902461C6E440C007072C2"
-               BuildableName = "scheduleTests.xctest"
-               BlueprintName = "scheduleTests"
-               ReferencedContainer = "container:schedule.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "040902511C6E440C007072C2"
-               BuildableName = "scheduleUITests.xctest"
-               BlueprintName = "scheduleUITests"
-               ReferencedContainer = "container:schedule.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "040902321C6E440C007072C2"
-            BuildableName = "schedule.app"
-            BlueprintName = "schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "048A4B181C9868C1008CA6B0"
+            BuildableName = "HH Schedule.app"
+            BlueprintName = "HH Schedule"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "040902321C6E440C007072C2"
-            BuildableName = "schedule.app"
-            BlueprintName = "schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "048A4B181C9868C1008CA6B0"
+            BuildableName = "HH Schedule.app"
+            BlueprintName = "HH Schedule"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "040902321C6E440C007072C2"
-            BuildableName = "schedule.app"
-            BlueprintName = "schedule"
-            ReferencedContainer = "container:schedule.xcodeproj">
+            BlueprintIdentifier = "048A4B181C9868C1008CA6B0"
+            BuildableName = "HH Schedule.app"
+            BlueprintName = "HH Schedule"
+            ReferencedContainer = "container:HH Schedule.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

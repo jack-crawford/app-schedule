@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:schedule.xcodeproj">
+      location = "self:/Users/jack/Desktop/app-schedule/schedule/HH Schedule.xcodeproj">
    </FileRef>
 </Workspace>

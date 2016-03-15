@@ -11,7 +11,6 @@
 		040902391C6E440C007072C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040902381C6E440C007072C2 /* ViewController.swift */; };
 		0409023C1C6E440C007072C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409023A1C6E440C007072C2 /* Main.storyboard */; };
 		0409023E1C6E440C007072C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0409023D1C6E440C007072C2 /* Assets.xcassets */; };
-		040902411C6E440C007072C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0409023F1C6E440C007072C2 /* LaunchScreen.storyboard */; };
 		0409024C1C6E440C007072C2 /* scheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409024B1C6E440C007072C2 /* scheduleTests.swift */; };
 		040902571C6E440C007072C2 /* scheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040902561C6E440C007072C2 /* scheduleUITests.swift */; };
 		046D81E51C971A04008B2F22 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046D81E31C971A04008B2F22 /* Interface.storyboard */; };
@@ -23,6 +22,7 @@
 		046D81FB1C971A04008B2F22 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D81FA1C971A04008B2F22 /* GlanceController.swift */; };
 		046D81FD1C971A04008B2F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046D81FC1C971A04008B2F22 /* Assets.xcassets */; };
 		046D82011C971A04008B2F22 /* watch_schedule.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 046D81E11C971A04008B2F22 /* watch_schedule.app */; };
+		048A4B491C98929D008CA6B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */; };
 		0499C70E1C73C34A00541C97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499C70D1C73C34A00541C97 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +88,6 @@
 		040902381C6E440C007072C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0409023B1C6E440C007072C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0409023D1C6E440C007072C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		040902401C6E440C007072C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040902421C6E440C007072C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040902471C6E440C007072C2 /* scheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0409024B1C6E440C007072C2 /* scheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleTests.swift; sourceTree = "<group>"; };
@@ -108,6 +107,10 @@
 		046D81FA1C971A04008B2F22 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		046D81FC1C971A04008B2F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046D81FE1C971A04008B2F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048A4B2A1C9868C2008CA6B0 /* schedule copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "schedule copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/schedule copy-Info.plist"; sourceTree = "<absolute>"; };
+		048A4B371C9868CE008CA6B0 /* watch_schedule copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "watch_schedule copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/watch_schedule copy-Info.plist"; sourceTree = "<absolute>"; };
+		048A4B451C98694C008CA6B0 /* watch_schedule Extension copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "watch_schedule Extension copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/watch_schedule Extension copy-Info.plist"; sourceTree = "<absolute>"; };
+		048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0499C70D1C73C34A00541C97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +156,9 @@
 				046D81E21C971A04008B2F22 /* watch_schedule */,
 				046D81F11C971A04008B2F22 /* watch_schedule Extension */,
 				040902341C6E440C007072C2 /* Products */,
+				048A4B2A1C9868C2008CA6B0 /* schedule copy-Info.plist */,
+				048A4B371C9868CE008CA6B0 /* watch_schedule copy-Info.plist */,
+				048A4B451C98694C008CA6B0 /* watch_schedule Extension copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,11 +177,11 @@
 		040902351C6E440C007072C2 /* schedule */ = {
 			isa = PBXGroup;
 			children = (
+				048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */,
 				040902361C6E440C007072C2 /* AppDelegate.swift */,
 				040902381C6E440C007072C2 /* ViewController.swift */,
 				0409023A1C6E440C007072C2 /* Main.storyboard */,
 				0409023D1C6E440C007072C2 /* Assets.xcassets */,
-				0409023F1C6E440C007072C2 /* LaunchScreen.storyboard */,
 				040902421C6E440C007072C2 /* Info.plist */,
 			);
 			path = schedule;
@@ -335,10 +341,10 @@
 				TargetAttributes = {
 					040902321C6E440C007072C2 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = HPMNKBV2JG;
+						DevelopmentTeam = 6G79V3PWFM;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -359,7 +365,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0409022E1C6E440C007072C2 /* Build configuration list for PBXProject "schedule" */;
+			buildConfigurationList = 0409022E1C6E440C007072C2 /* Build configuration list for PBXProject "HH Schedule" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -386,9 +392,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040902411C6E440C007072C2 /* LaunchScreen.storyboard in Resources */,
 				0499C70E1C73C34A00541C97 /* Default-568h@2x.png in Resources */,
 				0409023E1C6E440C007072C2 /* Assets.xcassets in Resources */,
+				048A4B491C98929D008CA6B0 /* Launch Screen.storyboard in Resources */,
 				0409023C1C6E440C007072C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,14 +501,6 @@
 				0409023B1C6E440C007072C2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0409023F1C6E440C007072C2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040902401C6E440C007072C2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		046D81E31C971A04008B2F22 /* Interface.storyboard */ = {
@@ -742,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0409022E1C6E440C007072C2 /* Build configuration list for PBXProject "schedule" */ = {
+		0409022E1C6E440C007072C2 /* Build configuration list for PBXProject "HH Schedule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040902591C6E440C007072C2 /* Debug */,
@@ -785,6 +783,7 @@
 				046D82041C971A04008B2F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046D82061C971A04008B2F22 /* Build configuration list for PBXNativeTarget "watch_schedule" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +792,7 @@
 				046D82081C971A04008B2F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
