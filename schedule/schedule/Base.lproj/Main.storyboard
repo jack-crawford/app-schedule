@@ -122,6 +122,7 @@
                             <constraint firstItem="RsR-Ky-fpJ" firstAttribute="top" secondItem="iA5-QQ-7NX" secondAttribute="bottom" constant="2" id="yua-rC-BDn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ITT-OY-uao"/>
                     <connections>
                         <outlet property="at_label" destination="dlG-gN-130" id="mny-Kv-DOZ"/>
                         <outlet property="letter_display" destination="p6u-vU-0F6" id="Tcy-nd-cSe"/>
