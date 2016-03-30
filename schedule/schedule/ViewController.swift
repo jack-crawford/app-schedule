@@ -40,14 +40,14 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.whiteColor()
         }
         print("button")
-
+        loadweb()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadweb()
-                timer = NSTimer.scheduledTimerWithTimeInterval(30000, target: self, selector: "loadweb", userInfo: nil, repeats: true)
+                timer = NSTimer.scheduledTimerWithTimeInterval(900, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
     func loadmessage(string: String) -> String {
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/message.php") {
@@ -91,12 +91,12 @@ class ViewController: UIViewController {
                             
                             if DateInDayFormat == "Sat" || DateInDayFormat == "Sun" {
                                 //display weekend labels
-                                letter_display.text = "it's";
+                                letter_display.text = cyc + "day";
                                 mod_display.text = "the weekend"
-                                next_mod_time_label.text = ""
-                                at_label.text = ""
+                                next_mod_time_label.text = "Monday"
+                                at_label.text = "Will be"
                                 message_label.text = ""
-                                today_label.text = ""
+                                today_label.text = "it's"
                             } else {
                                 if mod == "good morning" {
                                     letter_display.text = "Good";
