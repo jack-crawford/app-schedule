@@ -109,6 +109,7 @@
 		046D81FA1C971A04008B2F22 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		046D81FC1C971A04008B2F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046D81FE1C971A04008B2F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0487B0771CADE42000A7B259 /* HH_Schedule-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HH_Schedule-Bridging-Header.h"; sourceTree = "<group>"; };
 		048A4B2A1C9868C2008CA6B0 /* schedule copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "schedule copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/schedule copy-Info.plist"; sourceTree = "<absolute>"; };
 		048A4B371C9868CE008CA6B0 /* watch_schedule copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "watch_schedule copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/watch_schedule copy-Info.plist"; sourceTree = "<absolute>"; };
 		048A4B451C98694C008CA6B0 /* watch_schedule Extension copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "watch_schedule Extension copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/watch_schedule Extension copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -151,6 +152,7 @@
 		0409022A1C6E440C007072C2 = {
 			isa = PBXGroup;
 			children = (
+				0487B0771CADE42000A7B259 /* HH_Schedule-Bridging-Header.h */,
 				0499C70D1C73C34A00541C97 /* Default-568h@2x.png */,
 				040902351C6E440C007072C2 /* schedule */,
 				0409024A1C6E440C007072C2 /* scheduleTests */,
@@ -834,6 +836,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH_Schedule-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -848,6 +851,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH_Schedule-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
