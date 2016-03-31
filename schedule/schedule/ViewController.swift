@@ -5,9 +5,9 @@
 //  Created by Jack Crawford on 2/12/16.
 //  Copyright © 2016 Jack Crawford. All rights reserved.
 //
-
 import UIKit
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, IGLDropDownMenuDelegate{
     @IBOutlet weak var today_label: UILabel!
     @IBOutlet weak var at_label: UILabel!
     @IBOutlet weak var letter_display: UILabel!
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     let schoolred = UIColor(red:0.77, green:0.08, blue:0.11, alpha:1.0)
     let schoolblue = UIColor(red:0.54, green:0.73, blue:0.87, alpha:1.0)
     var timer = NSTimer()
-
+    
     
     
     @IBAction func menubutton(sender: AnyObject) {
@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         }
         print("button")
         loadweb()
+        performSegueWithIdentifier("switchtodictionary", sender: self)
     }
     
     override func viewDidLoad() {
