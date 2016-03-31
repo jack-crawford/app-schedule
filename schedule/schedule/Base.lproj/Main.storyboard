@@ -51,7 +51,7 @@
                                     <navigationItem id="IGT-tC-6jH">
                                         <nil key="title"/>
                                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DDU-Sl-NAV">
-                                            <rect key="frame" x="130" y="2" width="60" height="40"/>
+                                            <rect key="frame" x="8" y="2" width="304" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" image="menubuttonwhite">
                                                 <color key="titleColor" red="0.98452793949999995" green="1" blue="0.96769204119999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,7 +165,7 @@
                                     <navigationItem id="iSY-Yd-Mb8">
                                         <nil key="title"/>
                                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qIa-07-RHg">
-                                            <rect key="frame" x="130" y="2" width="60" height="40"/>
+                                            <rect key="frame" x="8" y="2" width="304" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" image="menubuttonwhite">
                                                 <color key="titleColor" red="0.98452793949999995" green="1" blue="0.96769204119999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -185,7 +185,7 @@
                                     <constraint firstAttribute="height" constant="37" id="9Rz-ZB-cpt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -201,6 +201,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="E1c-Ri-sdL"/>
                     <connections>
+                        <outlet property="testing_animation" destination="l63-X6-oMV" id="znV-Fe-ytG"/>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="HomePage" id="58U-l8-vNs"/>
                     </connections>
                 </viewController>

@@ -8,13 +8,17 @@
 
 import UIKit
 
+
 class ViewController2: UIViewController {
+    @IBOutlet weak var testing_animation: UILabel!
     @IBAction func menubutton(sender: AnyObject) {
         performSegueWithIdentifier("HomePage", sender: self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.animateWithDuration(2, animations: {self.testing_animation.center.x += self.view.bounds.width
+            }, completion: nil)
 
         // Do any additional setup after loading the view.
     }

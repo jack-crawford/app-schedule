@@ -25,10 +25,6 @@
 		046D82011C971A04008B2F22 /* watch_schedule.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 046D81E11C971A04008B2F22 /* watch_schedule.app */; };
 		048A4B491C98929D008CA6B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */; };
 		0499C70E1C73C34A00541C97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0499C70D1C73C34A00541C97 /* Default-568h@2x.png */; };
-		4CA46F5A0F6296CFE90214A6 /* Pods_scheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90420E0B3D8F851DD59BDBE8 /* Pods_scheduleTests.framework */; };
-		834481469D12C8132FB1263B /* Pods_schedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC578FF88DE39AE1055400 /* Pods_schedule.framework */; };
-		CDEEA538EE6F05D130F79E93 /* Pods_scheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51CDC2D1A9293AACD726796 /* Pods_scheduleUITests.framework */; };
-		DB472EB752EAF9558C1BEF50 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99268CA8A018170BB494BBB6 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +96,6 @@
 		040902521C6E440C007072C2 /* scheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040902561C6E440C007072C2 /* scheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITests.swift; sourceTree = "<group>"; };
 		040902581C6E440C007072C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04221E3A1CACC660000436B0 /* Schedule_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Schedule_Header.h; path = ../Schedule_Header.h; sourceTree = "<group>"; };
 		046BC5541CAC62AC00BC162C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		046D81E11C971A04008B2F22 /* watch_schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch_schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046D81E41C971A04008B2F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -119,10 +114,6 @@
 		048A4B451C98694C008CA6B0 /* watch_schedule Extension copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "watch_schedule Extension copy-Info.plist"; path = "/Users/jack/Desktop/app-schedule/schedule/watch_schedule Extension copy-Info.plist"; sourceTree = "<absolute>"; };
 		048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0499C70D1C73C34A00541C97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		15FC578FF88DE39AE1055400 /* Pods_schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90420E0B3D8F851DD59BDBE8 /* Pods_scheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scheduleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99268CA8A018170BB494BBB6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C51CDC2D1A9293AACD726796 /* Pods_scheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB472EB752EAF9558C1BEF50 /* Pods.framework in Frameworks */,
-				834481469D12C8132FB1263B /* Pods_schedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA46F5A0F6296CFE90214A6 /* Pods_scheduleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEEA538EE6F05D130F79E93 /* Pods_scheduleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +180,6 @@
 		040902351C6E440C007072C2 /* schedule */ = {
 			isa = PBXGroup;
 			children = (
-				04221E3A1CACC660000436B0 /* Schedule_Header.h */,
 				046BC5541CAC62AC00BC162C /* ViewController2.swift */,
 				048A4B481C98929D008CA6B0 /* Launch Screen.storyboard */,
 				040902361C6E440C007072C2 /* AppDelegate.swift */,
@@ -258,10 +244,6 @@
 		FBBDF1E252C0C76AF8052BD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99268CA8A018170BB494BBB6 /* Pods.framework */,
-				15FC578FF88DE39AE1055400 /* Pods_schedule.framework */,
-				90420E0B3D8F851DD59BDBE8 /* Pods_scheduleTests.framework */,
-				C51CDC2D1A9293AACD726796 /* Pods_scheduleUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -372,7 +354,7 @@
 		0409022B1C6E440C007072C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jack Crawford";
 				TargetAttributes = {
@@ -715,6 +697,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH-Schedule_Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -753,6 +736,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HH-Schedule_Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -762,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = schedule/Info.plist;
@@ -769,7 +754,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jack.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "schedule/schedule-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -777,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = schedule/Info.plist;
@@ -784,7 +771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jack.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "schedule/schedule-Bridging-Header.h";
 			};
 			name = Release;
 		};

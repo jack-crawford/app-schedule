@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController, IGLDropDownMenuDelegate{
+class ViewController: UIViewController {
     @IBOutlet weak var today_label: UILabel!
     @IBOutlet weak var at_label: UILabel!
     @IBOutlet weak var letter_display: UILabel!
@@ -48,7 +48,7 @@ class ViewController: UIViewController, IGLDropDownMenuDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadweb()
-                timer = NSTimer.scheduledTimerWithTimeInterval(900, target: self, selector: "loadweb", userInfo: nil, repeats: true)
+                timer = NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "loadweb", userInfo: nil, repeats: true)
     }
     func loadmessage(string: String) -> String {
         if let url = NSURL(string: "http://localhost:8888/Schedule-Project/message.php") {
