@@ -50,7 +50,7 @@
                                     <navigationItem id="IGT-tC-6jH">
                                         <nil key="title"/>
                                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DDU-Sl-NAV">
-                                            <rect key="frame" x="129" y="2" width="62" height="40"/>
+                                            <rect key="frame" x="8" y="2" width="304" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" image="menubuttonwhite">
                                                 <color key="titleColor" red="0.98452793949999995" green="1" blue="0.96769204119999996" alpha="1" colorSpace="calibratedRGB"/>
